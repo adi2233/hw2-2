@@ -9,12 +9,11 @@ var port = process.env.PORT || 3000;
 //open connection to mongoDB
 mongoose.connection.once('open', function(){
     app.use('/', express.static('./public'));
-    app.use(function(req, res, next) {
+    app.use(function(req, res) {
       res.header("Access-Control-Allow-Origin", "*");
       res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     app.set('json spaces', 4);
     res.set("Content-Type", "application/json");
-      next();
     });
     app.get('/students',student.getData);
     app.get('/studentsById/:idstud',student.getDataById);
