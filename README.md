@@ -5,7 +5,7 @@
 
 ### write on url- /getAllStudent
 
-[getAllStudent](https://hw2-1.herokuapp.com/getAllStudent)  
+[getAllStudent](https://hw2-2-server.herokuapp.com/students)  
 
 # getStudGrade
 
@@ -13,7 +13,7 @@
 
 ### write on url- /getStudGrade/id
 
-[getStudGrade](https://hw2-1.herokuapp.com/getStudGrade/12345)  
+[getStudGrade](https://hw2-2-server.herokuapp.com/studentsById/12345)  
 
 # getExcellenceByYear
 
@@ -21,4 +21,4 @@
 
 ### write- /getExcellenceByYear/year
 
-[getExcellenceByYear](https://hw2-1.herokuapp.com/getExcellenceByYear/2005)
+[getExcellenceByYear](https://hw2-2-server.herokuapp.com/studentsByYear/2000)
