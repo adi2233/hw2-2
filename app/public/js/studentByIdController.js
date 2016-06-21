@@ -9,7 +9,7 @@ var showStudentById = angular.module('showStudentById',['ngRoute'])
             });
     })
 showStudentById.controller('showStudById',['$scope','$http', '$location',function($scope,$http, $location) {
-     $http.get("http://localhost:3000/studentsById/"+ $location.search().idstud).success(function(data){
+     $http.get("https://hw2-2-server.herokuapp.com/studentsById/"+ $location.search().idstud).success(function(data){
         $scope.studentByIdController = data; 
         console.log(data);
     });
