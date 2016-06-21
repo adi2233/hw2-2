@@ -9,7 +9,7 @@ var showStudentByYear = angular.module('showStudentByYear',['ngRoute'])
             });
     })
 showStudentByYear.controller('showStudByYear',['$scope','$http', '$location',function($scope,$http, $location) {
-     $http.get("http://localhost:3000/studentsByYear/"+ $location.search().year).success(function(data){
+     $http.get("https://hw2-2-server.herokuapp.com/studentsByYear/"+ $location.search().year).success(function(data){
         $scope.studentByYearController = data; 
         console.log(data);
     });
